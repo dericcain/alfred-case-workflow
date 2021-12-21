@@ -1,0 +1,46 @@
+2020-12-16T11:59:26,191 Using pip 20.2.2 from /Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip (python 3.8)
+2020-12-16T11:59:26,195 Non-user install because site-packages writeable
+2020-12-16T11:59:26,206 Created temporary directory: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-ephem-wheel-cache-mwnxn31w
+2020-12-16T11:59:26,206 Created temporary directory: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-tracker-jybl_fip
+2020-12-16T11:59:26,206 Initialized build tracking at /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-tracker-jybl_fip
+2020-12-16T11:59:26,206 Created build tracker: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-tracker-jybl_fip
+2020-12-16T11:59:26,206 Entered build tracker: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-tracker-jybl_fip
+2020-12-16T11:59:26,207 Created temporary directory: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-install-0pnpplv_
+2020-12-16T11:59:26,212 Collecting git+https://github.com/shipt/legions-common.git
+2020-12-16T11:59:26,212   Created temporary directory: /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-build-i6c356ji
+2020-12-16T11:59:26,213   Cloning https://github.com/shipt/legions-common.git to /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-build-i6c356ji
+2020-12-16T11:59:35,808 ERROR: Command errored out with exit status 128: git clone -q https://github.com/shipt/legions-common.git /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-build-i6c356ji Check the logs for full command output.
+2020-12-16T11:59:35,808 Exception information:
+2020-12-16T11:59:35,808 Traceback (most recent call last):
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/cli/base_command.py", line 216, in _main
+2020-12-16T11:59:35,808     status = self.run(options, args)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/cli/req_command.py", line 182, in wrapper
+2020-12-16T11:59:35,808     return func(self, options, args)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/commands/install.py", line 324, in run
+2020-12-16T11:59:35,808     requirement_set = resolver.resolve(
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/resolution/legacy/resolver.py", line 183, in resolve
+2020-12-16T11:59:35,808     discovered_reqs.extend(self._resolve_one(requirement_set, req))
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/resolution/legacy/resolver.py", line 388, in _resolve_one
+2020-12-16T11:59:35,808     abstract_dist = self._get_abstract_dist_for(req_to_install)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/resolution/legacy/resolver.py", line 340, in _get_abstract_dist_for
+2020-12-16T11:59:35,808     abstract_dist = self.preparer.prepare_linked_requirement(req)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/operations/prepare.py", line 467, in prepare_linked_requirement
+2020-12-16T11:59:35,808     local_file = unpack_url(
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/operations/prepare.py", line 239, in unpack_url
+2020-12-16T11:59:35,808     unpack_vcs_link(link, location)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/operations/prepare.py", line 99, in unpack_vcs_link
+2020-12-16T11:59:35,808     vcs_backend.unpack(location, url=hide_url(link.url))
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/vcs/versioncontrol.py", line 733, in unpack
+2020-12-16T11:59:35,808     self.obtain(location, url=url)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/vcs/versioncontrol.py", line 641, in obtain
+2020-12-16T11:59:35,808     self.fetch_new(dest, url, rev_options)
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/vcs/git.py", line 230, in fetch_new
+2020-12-16T11:59:35,808     self.run_command(make_command('clone', '-q', url, dest))
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/vcs/versioncontrol.py", line 771, in run_command
+2020-12-16T11:59:35,808     return call_subprocess(cmd, cwd,
+2020-12-16T11:59:35,808   File "/Users/dericcain/Library/Python/3.8/lib/python/site-packages/pip/_internal/vcs/versioncontrol.py", line 166, in call_subprocess
+2020-12-16T11:59:35,808     raise SubProcessError(exc_msg)
+2020-12-16T11:59:35,808 pip._internal.exceptions.SubProcessError: Command errored out with exit status 128: git clone -q https://github.com/shipt/legions-common.git /private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-build-i6c356ji Check the logs for full command output.
+2020-12-16T11:59:35,846 WARNING: You are using pip version 20.2.2; however, version 20.3.3 is available.
+2020-12-16T11:59:35,846 You should consider upgrading via the '/usr/local/opt/python@3.8/bin/python3.8 -m pip install --upgrade pip' command.
+2020-12-16T11:59:35,846 Removed build tracker: '/private/var/folders/fx/4hjjzwf518qf6n6fvxw9s81r0000gn/T/pip-req-tracker-jybl_fip'
